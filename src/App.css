@@ -36,3 +36,66 @@
     transform: rotate(360deg);
   }
 }
+
+.calendar {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  width: 90%;
+}
+
+.location-calendar {
+  flex-basis: 30%;
+  margin: 0 10px;
+}
+
+.time-slots {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.time-slot {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  height: 40px;
+}
+
+.time {
+  flex-basis: 25%;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.booking {
+  flex-basis: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.booking-block {
+  background-color: #2196f3;
+  border-radius: 3px;
+  color: #fff;
+  margin: 5px;
+  padding: 5px;
+}
+
+.booking-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 2px;
+  padding: 0 5px;
+}
+
+.start-time {
+  flex-basis: 50%;
+}
+
+.end-time {
+  flex-basis: 50%;
+}
