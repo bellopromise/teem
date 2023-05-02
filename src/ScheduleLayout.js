@@ -65,7 +65,7 @@ const ScheduleLayout =({ timeSlots, isLocationAvailable })=> {
             timeSlots.map((timeSlot) => (
               <tr key={timeSlot.time}>
                 <td className="border px-4 py-2">{timeSlot.time}</td>
-                {(timeSlot.location1.consecutive && timeSlot.location1.status == 'Booked') ||<td
+                {(timeSlot.location1.consecutive && timeSlot.location1.status === 'Booked') ||<td
                   className={`border px-4 py-2 cursor-pointer ${
                     timeSlot.location1.status === 'Booked' ? 'bg-red-200 text-blue-700' : ''
                   }`}
@@ -75,7 +75,7 @@ const ScheduleLayout =({ timeSlots, isLocationAvailable })=> {
                 >
                   {timeSlot.location1.status}
                 </td>}
-                {(timeSlot.location2.consecutive && timeSlot.location2.status == 'Booked') ||<td
+                {(timeSlot.location2.consecutive && timeSlot.location2.status === 'Booked') ||<td
                   className={`border px-4 py-2 cursor-pointer ${
                     timeSlot.location2.status === 'Booked' ? 'bg-red-200 text-blue-700' : ''
                   }`}
@@ -85,7 +85,7 @@ const ScheduleLayout =({ timeSlots, isLocationAvailable })=> {
                 >
                   {timeSlot.location2.status}
                 </td>}
-                {(timeSlot.location3.consecutive && timeSlot.location3.status == 'Booked') ||<td
+                {(timeSlot.location3.consecutive && timeSlot.location3.status === 'Booked') ||<td
                   className={`border px-4 py-2 cursor-pointer ${
                     timeSlot.location3.status === 'Booked' ? 'bg-red-200 text-blue-700' : ''
                   }`}

@@ -33,7 +33,7 @@ const BookingModal=({ onCancel, onSave, isLocationAvailable, timeSlotValidation}
                     <h2 className="text-2xl font-bold mb-4">Book Appointment</h2>
                     <label className="block font-bold mb-2">
                     Location:
-                    <select className="bg-gray-200 rounded-lg p-2 ml-2" value={location} onChange={(e) => setLocation(e.target.value)}>
+                    <select className="bg-gray-200 rounded-lg p-2 ml-2" value={location} onChange={(e) => setLocation(e.target.value)} required>
                         <option value="">Select a location</option>
                         <option value="location1">Location 1</option>
                         <option value="location2">Location 2</option>
@@ -43,12 +43,12 @@ const BookingModal=({ onCancel, onSave, isLocationAvailable, timeSlotValidation}
                     <br />
                     <label className="block font-bold mb-2">
                     Start Time:
-                    <input type="time" className="bg-gray-200 rounded-lg p-2 ml-2" value={startTime} onChange={(e) => setStartTime(e.target.value)} />
+                    <input type="time" className="bg-gray-200 rounded-lg p-2 ml-2" value={startTime} onChange={(e) => setStartTime(e.target.value)}  required/>
                     </label>
                     <br />
                     <label className="block font-bold mb-2">
                     End Time:
-                    <input type="time" className="bg-gray-200 rounded-lg p-2 ml-2" value={endTime} onChange={(e) => setEndTime(e.target.value)} />
+                    <input type="time" className="bg-gray-200 rounded-lg p-2 ml-2" value={endTime} onChange={(e) => setEndTime(e.target.value)} required/>
                     </label>
                     <br />
                     <p className="error-message text-red-500">{errorMessage}</p>
