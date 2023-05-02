@@ -1,3 +1,9 @@
+# Important Notice
+
+This solution has been designed to work with valid time slots that are marked at every hour between 08:00 and 15:00. This means that any valid time slot in the system starts and ends at the beginning of an hour. For example, a valid time slot could start at 10:00 and end at 11:00. Any other time within that hour would not be considered a valid time slot.
+
+It's important to note this design aspect, as any times entered that are not on the hour will not be considered valid by the system. When using the solution, please ensure that you enter valid time slots that start and end at the beginning of an hour.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
